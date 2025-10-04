@@ -1,7 +1,7 @@
 import streamlit as st
 import cv2
-from Detector import VehicleDetector
-from Semaforo import SemaforoConfig, SemaforoController
+from Detector import VehicleDetector #Recuerde que esta en la carpeta src
+from Semaforo import SemaforoConfig, SemaforoController #Recuerde que esta en la carpeta src
 import time
 import tempfile
 import os
@@ -91,4 +91,5 @@ if video_path is not None:
         run_simulacion(video_path)
 else:
     st.info("ℹ️ Selecciona primero una fuente de video en la barra lateral")
+
 
