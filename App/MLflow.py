@@ -1,9 +1,9 @@
 import mlflow
 import mlflow.pyfunc
 import time
-from Semaforo import SemaforoConfig, SemaforoController
-from Detector import VehicleDetector
-from Display import Display
+from Semaforo import SemaforoConfig, SemaforoController #Recuerde que esta en la carpeta src
+from Detector import VehicleDetector #Recuerde que esta en la carpeta src
+from Display import Display #Recuerde que esta en la carpeta src
 import cv2
 
 if __name__ == "__main__":
@@ -55,3 +55,4 @@ if __name__ == "__main__":
         mlflow.log_artifact(MODEL_PATH, artifact_path="model")
 
         print(f"Run registrado en MLflow con fps={fps:.2f}, flujo={flujo_promedio:.2f}")
+
