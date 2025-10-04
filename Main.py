@@ -1,11 +1,11 @@
 import time
 import cv2
-from Detector import VehicleDetector
-from Semaforo import SemaforoConfig, SemaforoController
-from Display import Display
+from Detector import VehicleDetector #Recuerde que esta en la carpeta src
+from Semaforo import SemaforoConfig, SemaforoController #Recuerde que esta en la carpeta src
+from Display import Display#Recuerde que esta en la carpeta src
 
-VIDEO_PATH = r"C:\Users\Camil\Desktop\Especializacion 2do semestre\Proyecto de IA\Proyecto semaforizacion\video de prueba\Cali de noche en su tráfico  #viralvideo #shorts #videoshorts #shortvideo.mp4"
-MODEL_PATH = r"Models/best.pt"
+VIDEO_PATH = r"Supropio_video.mp4"
+MODEL_PATH = r"Model/best.pt"
 
 def main():
     config = SemaforoConfig()
@@ -33,3 +33,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
