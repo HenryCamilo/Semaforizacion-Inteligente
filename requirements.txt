@@ -1,0 +1,36 @@
+# PyTorch con CUDA 11.8 (ajustar a 12.x si tu driver es más nuevo)
+torch
+torchvision
+torchaudio
+--extra-index-url https://download.pytorch.org/whl/cu118
+
+# Visión por computadora
+ultralytics
+opencv-python
+pillow
+numpy
+pandas
+matplotlib
+albumentations
+
+# Audio
+librosa
+soundfile
+pydub
+scipy
+
+# Optimización / RL
+stable-baselines3
+sb3-contrib
+gym
+
+# Comunicación y dashboard
+fastapi
+uvicorn[standard]
+python-socketio
+paho-mqtt
+streamlit
+
+# Simulación SUMO (bindings)
+traci
+sumolib
